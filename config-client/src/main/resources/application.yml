@@ -1,0 +1,3 @@
+message: Hello default
+server:
+  port: 8889
