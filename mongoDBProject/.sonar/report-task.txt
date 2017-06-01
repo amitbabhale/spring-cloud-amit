@@ -1,0 +1,5 @@
+projectKey=mongoDBProject
+serverUrl=http://localhost:9000
+dashboardUrl=http://localhost:9000/dashboard/index/mongoDBProject
+ceTaskId=AVxg9gBX7OIYrY18aKun
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AVxg9gBX7OIYrY18aKun
