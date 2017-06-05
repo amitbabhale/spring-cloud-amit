@@ -26,7 +26,7 @@ public class Sender {
 	
 	public void sendMessage(String message) throws Exception {
 		System.out.println("Sending message...");
-		rabbitTemplate.convertAndSend(SpringAmpqApplication.queueName, "Hello from RabbitMQ!");
+		rabbitTemplate.convertAndSend(SpringAmpqApplication.queueName, message);
 		receiver.getLatch().await(10000, TimeUnit.MILLISECONDS);
 		context.close();
 	}

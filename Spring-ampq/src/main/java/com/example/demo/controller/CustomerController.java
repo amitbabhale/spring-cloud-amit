@@ -18,6 +18,7 @@ public class CustomerController {
 	@PostMapping("/send")
 	public ResponseEntity<String> publishCustomer(@RequestBody String message){
 		try {
+			System.out.println("Sending message");
 			sender.sendMessage(message);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

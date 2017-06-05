@@ -23,6 +23,7 @@ public class SpringAmpqApplication {
 
 
 	final public static String queueName = "spring-boot";
+	final public static String exchangeName = "spring-boot-exchange";
 
 	@Bean
 	Queue queue() {
@@ -31,7 +32,7 @@ public class SpringAmpqApplication {
 
 	@Bean
 	TopicExchange exchange() {
-		return new TopicExchange("spring-boot-exchange");
+		return new TopicExchange(exchangeName);
 	}
 
 	@Bean
