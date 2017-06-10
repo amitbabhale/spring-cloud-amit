@@ -1,0 +1,19 @@
+Set spring cli as path valiable so that we can use current directory.
+
+let say if i chose current directy as c:\spring then command need to be used to create a java project based on microservice:
+
+
+c:\spring> spring init --build=gradle --java-version=1.8 --dependencies=web --packaging=jar --package=com.example Amit 
+
+c:\spring>copy .\WelcomeKit\WelcomeController.java .\Amit\src\main\java\com\example\
+
+c:\spring> copy .\WelcomeKit\WelcomeController.java .\Amit\src\main\java\com\example\
+        1 file(s) copied.
+
+c:\spring> echo welcome.message:Amit >> .\Amit\src\main\resources\application.properties
+
+c:\spring> Cd to java project and run gradlew clean build
+
+c:\spring> gradlew bootRun
+
+Run a command to launch webbrowser with url: explorer "http://localhost:8080"
