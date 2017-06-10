@@ -9,6 +9,10 @@ Download executable msi. install it and run below 2 commands.
 "C:\Program Files\MongoDB\Server\3.2\bin\mongod.exe"
 to test if mongodb is up run commmand: show dbs
 
+command for 32 bit system:
+C:\>"c:\Program Files\MongoDB\Server\3.2\bin\mongod.exe" --dbpath "C:\data" --journal --storageEngine=mmapv1
+
+
 code quality:
 Download sonarqube server : https://www.sonarqube.org/downloads/
 sonar server default url: http://localhost:9000/
